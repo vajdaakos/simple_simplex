@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>img/egyfazisu.jpg</file>
+        <file>img/pivotalas.png</file>
+        <file>img/diagram.png</file>
+    </qresource>
+</RCC>
