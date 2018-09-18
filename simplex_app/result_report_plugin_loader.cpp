@@ -29,7 +29,7 @@ void Result_Report_plugin_Loader::load_plugins(QDir plugins_dir)
                 menu_action->setCheckable(true);
                 connect(main_window->result_reporter_plugin_menu,SIGNAL(triggered(QAction*)),this,SLOT(set_result_reporter(QAction*)));
 
-                if(QString::compare(result_reporter_interface->Name(),"Bőbeszédű")==0)
+               if(fileName.contains("_default"))
                 {
                     menu_action->setChecked(true);
                     active_result_reporter_plugin=result_reporter_interface;

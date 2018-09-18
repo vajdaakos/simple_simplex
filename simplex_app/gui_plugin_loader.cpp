@@ -61,7 +61,7 @@ void gui_plugin_loader::load_plugins(QDir plugins_dir)
                 connect(dynamic_cast<QObject*>(gui_interface),SIGNAL(kanonikus_clicked()),parent_,SLOT(do_when_kanonikus_clicked()));
                 connect(parent_,SIGNAL(got_indulo_matrix_clicked()),dynamic_cast<QObject*>(gui_interface),SLOT(do_when_got_indulo_matrix_clicked()));
                 connect(dynamic_cast<QObject*>(gui_interface),SIGNAL(indulo_matrix_clicked()),parent_,SLOT(do_when_indulo_matrix_clicked()));
-                if(QString::compare(gui_interface->Name(),"Korcsolya")==0)
+                if(fileName.contains("_default"))
                 {
                     menu_action->setChecked(true);
                     main_window->central_widget->setCurrentWidget(dynamic_cast<QWidget*>(gui_interface));
