@@ -7,12 +7,13 @@
 QT       += widgets
 
 QT       -= gui
-
+CONFIG += plugin release no_plugin_name_prefix
 TARGET = picture_loader_default
 TEMPLATE = lib
 CONFIG(release, debug|release){
-    DESTDIR = ./release/lib
+    win32: DESTDIR = ./release/lib
     win32: DLLDESTDIR = ../simplex_app/release/bin/plugins/picture_load_plugins
+    unix: DESTDIR = ../simplex_app/release/bin/plugins/picture_load_plugins
     OBJECTS_DIR = ./release/obj
     MOC_DIR = ./release/moc
     RCC_DIR = ./release/rcc
@@ -20,8 +21,9 @@ CONFIG(release, debug|release){
 }
 
 CONFIG(debug, debug|release){
-    DESTDIR = ./debug/lib
+    win32: DESTDIR = ./debug/lib
     win32: DLLDESTDIR = ../simplex_app/debug/bin/plugins/picture_load_plugins
+    unix: DESTDIR = ../simplex_app/debug/bin/plugins/picture_load_plugins
     OBJECTS_DIR = debug/obj
     MOC_DIR = debug/moc
     RCC_DIR = debug/rcc

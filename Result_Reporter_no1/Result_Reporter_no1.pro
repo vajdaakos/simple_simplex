@@ -8,12 +8,13 @@ QT       += widgets
 
 TARGET = Result_Reporter_default
 TEMPLATE = lib
-CONFIG += plugin release
+CONFIG += plugin release no_plugin_name_prefix
 DEFINES += RESULT_REPORTER_DEFAULT_LIBRARY
 VERSION = 1.0.0
 CONFIG(release, debug|release){
-    DESTDIR = ./release/lib
+    win32: DESTDIR = ./release/lib
     win32: DLLDESTDIR = ../simplex_app/release/bin/plugins/result_reporter_plugins
+    unix: DESTDIR = ../simplex_app/release/bin/plugins/result_reporter_plugins
     OBJECTS_DIR = ./release/obj
     MOC_DIR = ./release/moc
     RCC_DIR = ./release/rcc
@@ -21,8 +22,9 @@ CONFIG(release, debug|release){
 }
 
 CONFIG(debug, debug|release){
-    DESTDIR = ./debug/lib
+    win32: DESTDIR = ./debug/lib
     win32: DLLDESTDIR = ../simplex_app/debug/bin/plugins/result_reporter_plugins
+    unix: DESTDIR = ../simplex_app/debug/bin/plugins/result_reporter_plugins
     OBJECTS_DIR = debug/obj
     MOC_DIR = debug/moc
     RCC_DIR = debug/rcc
