@@ -1,7 +1,6 @@
 #include "pivot_selector_maxoszlop.h"
-Pivot_selector_sormax::Pivot_selector_sormax()
-{
-}
+Pivot_selector_sormax::Pivot_selector_sormax()=default;
+
 QString Pivot_selector_sormax::Name() const
 {
     return "Maxoszlop";

@@ -19,7 +19,7 @@ signals:
 public slots:
 
 private:
-    QString Name() const;
+    QString Name() const override;
 
 };
 

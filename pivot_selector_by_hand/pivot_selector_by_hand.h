@@ -19,7 +19,7 @@ public slots:
     void do_when_pivot_element_selected(QModelIndex pivotelement);
 
 private:
-    QString Name() const;
+    QString Name() const override;
 
 };
 

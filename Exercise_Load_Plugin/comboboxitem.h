@@ -7,7 +7,7 @@ class ComboboxItem : public QObject
 {
     Q_OBJECT
 public:
-    explicit ComboboxItem(QObject *parent = 0, int=0, int=0, int=0, QString="nincs");
+    explicit ComboboxItem(QObject *parent = nullptr, int=0, int=0, int=0, const QString& = "nincs");
     int id;
     int t;
     int k;

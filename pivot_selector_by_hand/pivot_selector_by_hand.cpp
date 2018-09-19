@@ -2,9 +2,8 @@
 #include  "pivot_selector_by_hand_dialog.h"
 #include <QDebug>
 
-Pivot_selector_by_hand::Pivot_selector_by_hand()
-{
-}
+Pivot_selector_by_hand::Pivot_selector_by_hand()=default;
+
 QString Pivot_selector_by_hand::Name() const
 {
     return "Kézi";

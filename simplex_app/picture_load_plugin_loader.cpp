@@ -33,7 +33,7 @@ void picture_load_plugin_loader::trigger_plugin(QAction* menu_action)
 {
 
     QVariant v = menu_action->data();
-    Picture_Load_Plugin_Interface* picture_shower = (Picture_Load_Plugin_Interface *) v.value<void *>();
+    auto *picture_shower = reinterpret_cast<Picture_Load_Plugin_Interface *>(v.value<void *>());
     picture_shower->show_picture(main_window);
 
 }

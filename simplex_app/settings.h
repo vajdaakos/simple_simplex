@@ -12,8 +12,8 @@ class Settings : public QDialog
     Q_OBJECT
 
 public:
-    explicit Settings(QWidget *parent = 0,int variable_index=0, QString variable_name="x");
-    explicit Settings(int variable_index=0, QString variable_name="x");
+    explicit Settings(QWidget *parent = 0, int variable_index=0, const QString &variable_name="x");
+    explicit Settings(int variable_index=0, const QString &variable_name="x");
 
     QString get_variable_name();
     ~Settings();

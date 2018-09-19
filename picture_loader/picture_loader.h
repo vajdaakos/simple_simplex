@@ -11,9 +11,9 @@ class Picture_Loader:public QWidget, public Picture_Load_Plugin_Interface
     Q_INTERFACES(Picture_Load_Plugin_Interface)
 public:
     Picture_Loader();
-    QString Name() const;
+    QString Name() const override;
 
-    void show_picture(QMainWindow* w);
+    void show_picture(QMainWindow* w) override;
 };
 
 #endif // PICTURE_LOADER_H

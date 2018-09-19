@@ -9,7 +9,7 @@ QWidget *Delegate_for_numbers::createEditor(QWidget *parent,
     const QStyleOptionViewItem &/* option */,
     const QModelIndex &/* index */) const
 {
-    QDoubleSpinBox *editor = new QDoubleSpinBox(parent);
+    auto *editor = new QDoubleSpinBox(parent);
     editor->setFrame(false);
     editor->setDecimals(3);
     editor->setMinimum(-9999999999);
@@ -26,7 +26,7 @@ void Delegate_for_numbers::setEditorData(QWidget *editor,
 {
     double value = index.model()->data(index, Qt::EditRole).toDouble();
 
-    QDoubleSpinBox *spinBox = static_cast<QDoubleSpinBox*>(editor);
+    auto *spinBox = dynamic_cast<QDoubleSpinBox*>(editor);
     spinBox->setValue(value);
 }
 //! [2]
@@ -35,7 +35,7 @@ void Delegate_for_numbers::setEditorData(QWidget *editor,
 void Delegate_for_numbers::setModelData(QWidget *editor, QAbstractItemModel *model,
                                    const QModelIndex &index) const
 {
-    QDoubleSpinBox *spinBox = static_cast<QDoubleSpinBox*>(editor);
+    auto *spinBox = dynamic_cast<QDoubleSpinBox*>(editor);
     spinBox->interpretText();
     double value = spinBox->value();
 

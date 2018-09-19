@@ -1,5 +1,4 @@
-#ifndef RESULT_REPORTER_MINIMAL_H
-#define RESULT_REPORTER_MINIMAL_H
+#pragma once
 #include "result_report_plugin_interface.h"
 #include <QDialog>
 
@@ -15,7 +14,7 @@ class Result_Reporter_Default : public QDialog, public Result_Report_Plugin_Inte
 
 public:
     explicit Result_Reporter_Default(QWidget *parent = nullptr);
-    QString Name() const;
+    QString Name() const override;
 
     void show_result_report(QStandardItemModel* indulo, QStandardItemModel* result, int lsz, QString pivot_modszer, QString vari_name, QWidget *parent = nullptr) Q_DECL_OVERRIDE;
 
@@ -27,5 +26,3 @@ private:
     QStandardItemModel* indulo;
     QStandardItemModel* result;
 };
-
-#endif // RESULT_REPORTER_MINIMAL_H

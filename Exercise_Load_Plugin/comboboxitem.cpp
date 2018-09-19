@@ -1,6 +1,6 @@
 #include "comboboxitem.h"
-
-ComboboxItem::ComboboxItem(QObject *parent, int id, int termteny, int korlfelt, QString megjegyzes) : QObject(parent)
+#include <utility>
+ComboboxItem::ComboboxItem(QObject *parent, int id, int termteny, int korlfelt, const QString& megjegyzes) : QObject(parent)
 {
     this->id=id;
     this->t=termteny;

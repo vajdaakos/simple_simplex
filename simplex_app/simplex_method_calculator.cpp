@@ -25,7 +25,7 @@ Simplex_method_calculator::Simplex_method_calculator()
 
 
 }
-void Simplex_method_calculator::start(int argc, char* argv[],QDir plugins_dir)
+void Simplex_method_calculator::start(int argc, char* argv[],const QDir& plugins_dir)
 {
     w=new MainWindow();
     w->add_menus(this);
@@ -530,7 +530,7 @@ void Simplex_method_calculator::do_when_post_pivot_element(QModelIndex index)
         utolso_allapot->setRowCount(utolso_elotti_allapot->rowCount());
         pivoter_->do_pivot(utolso_elotti_allapot,utolso_allapot,index);
          remove_surplus_from_column(utolso_allapot);
-        if(vegigszamolom==true)
+        if(vegigszamolom)
             do_when_szamol_clicked();
 
     }
@@ -546,8 +546,8 @@ bool Simplex_method_calculator::is_two_phase(QStandardItemModel *model)
 {
     if (((model->verticalHeaderItem(0))->text())=="*c")
         return true;
-    else
-        return false;
+
+    return false;
 }
 
 bool Simplex_method_calculator::is_first_phase_ready(QStandardItemModel *model)
@@ -588,7 +588,7 @@ void Simplex_method_calculator::do_when_szamol_clicked()
     }
 
 }
-void Simplex_method_calculator::do_when_indulo_feladat_changed(QModelIndex i, QModelIndex i2, QVector<int> j)
+void Simplex_method_calculator::do_when_indulo_feladat_changed(QModelIndex i, QModelIndex i2, const QVector<int>& j)
 {
 
     kanonikus_alak->clear();
@@ -621,7 +621,7 @@ settings.setModal(true);
 settings.exec();
 }
 
-void Simplex_method_calculator::set_up_plugins(QDir plugins_dir)
+void Simplex_method_calculator::set_up_plugins(const QDir& plugins_dir)
 {
     gui_plugin_loader_= new gui_plugin_loader(this, w);
     pivot_selector_plugin_loader_=new Pivot_Selector_Plugin_Loader(this, w);
