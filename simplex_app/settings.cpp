@@ -1,7 +1,7 @@
 #include "settings.h"
 #include "ui_settings.h"
 #include <QMessageBox>
-Settings::Settings(QWidget *parent, int variable_index, QString variable_name) :
+Settings::Settings(QWidget *parent, int variable_index, const QString& variable_name) :
     QDialog(parent),
     ui(new Ui::Settings)
 {
@@ -9,7 +9,7 @@ Settings::Settings(QWidget *parent, int variable_index, QString variable_name) :
     ui->variable_index->setValue(variable_index);
     ui->variable_name->setText(variable_name);
 }
-Settings::Settings(int variable_index, QString variable_name) :
+Settings::Settings(int variable_index, const QString& variable_name) :
        ui(new Ui::Settings)
 {
 

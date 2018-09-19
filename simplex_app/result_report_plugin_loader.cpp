@@ -8,7 +8,7 @@ Result_Report_plugin_Loader::Result_Report_plugin_Loader(QObject *parent, MainWi
 void Result_Report_plugin_Loader::load_plugins(QDir plugins_dir)
 {
 
-    QActionGroup* result_reporter_plugin_group=new QActionGroup (main_window);
+    auto *result_reporter_plugin_group=new QActionGroup (main_window);
     result_reporter_plugin_group->setExclusive(true);
     plugins_dir.cd("plugins");
     plugins_dir.cd("result_reporter_plugins");
@@ -45,7 +45,7 @@ void Result_Report_plugin_Loader::load_plugins(QDir plugins_dir)
 void Result_Report_plugin_Loader::set_result_reporter(QAction *menu_action)
 {
     QVariant v = menu_action->data();
-    Result_Report_Plugin_Interface* result_reporter = (Result_Report_Plugin_Interface*) v.value<void *>();
+    auto *result_reporter = reinterpret_cast<Result_Report_Plugin_Interface*>(v.value<void *>());
     active_result_reporter_plugin=result_reporter;
 
 

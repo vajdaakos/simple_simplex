@@ -11,7 +11,7 @@ class Exercise_Load_Plugin: public QDialog, public Exercise_Load_Plugin_Interfac
     Q_PLUGIN_METADATA(IID "com.imaddes.simplex.exercise_load_plugin_fron_db/1.0.0" FILE "exercise_load_plugin_interface.json")
     Q_INTERFACES(Exercise_Load_Plugin_Interface)
 public:
-    explicit Exercise_Load_Plugin(QWidget *parent = 0);
+    explicit Exercise_Load_Plugin(QWidget *parent = nullptr);
 
     void post_exercise(QStandardItemModel* exercise) Q_DECL_OVERRIDE;
 
@@ -22,9 +22,9 @@ public slots:
     void do_elfogadva(QStandardItemModel* exercise);
 
 private:
-    QString Name() const;
+    QString Name() const override;
 
-    QStandardItemModel* exercise;
+    QStandardItemModel* exercise();
 
 };
 

@@ -17,7 +17,7 @@ void gui_plugin_loader::load_plugins(QDir plugins_dir)
     main_window->central_widget=new QStackedWidget(main_window);
     main_window->setCentralWidget(main_window->centralWidget());
 
-    QActionGroup* gui_plugin_group=new QActionGroup (main_window);
+    auto *gui_plugin_group=new QActionGroup (main_window);
     gui_plugin_group->setExclusive(true);
 
     plugins_dir.cd("plugins");
@@ -78,7 +78,7 @@ void gui_plugin_loader::load_plugins(QDir plugins_dir)
 void gui_plugin_loader::set_gui(QAction* menuitem)
 {
      QVariant v = menuitem->data();
-     Mainwindow_Gui_Plugin_Interface* gui = (Mainwindow_Gui_Plugin_Interface *) v.value<void *>();
+     auto *gui = reinterpret_cast<Mainwindow_Gui_Plugin_Interface *>(v.value<void *>());
      main_window->central_widget->setCurrentWidget(dynamic_cast<QWidget*>(gui));
 }
 

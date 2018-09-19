@@ -13,12 +13,12 @@ class result_reporter_dialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit result_reporter_dialog(QStandardItemModel* indulo, QStandardItemModel* result, int lsz, QString pivot_modszer, QString vari_name, QWidget *parent = 0);
+    explicit result_reporter_dialog(QStandardItemModel* indulo, QStandardItemModel* result, int lsz, const QString& pivot_modszer, const QString &vari_name, QWidget *parent = nullptr);
     ~result_reporter_dialog();
 
 private slots:
 
-    void on_result_reporter_dialog_finished(int result);
+    void on_result_reporter_dialog_finished();
 
 private:
     QStandardItemModel* indulo;

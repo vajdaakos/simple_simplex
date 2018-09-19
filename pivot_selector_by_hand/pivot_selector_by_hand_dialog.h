@@ -14,7 +14,7 @@ class Pivot_Selector_By_Hand_Dialog : public QDialog
 signals:
     void pivot_selected(QModelIndex pivotelem);
 public:
-    explicit Pivot_Selector_By_Hand_Dialog(QStandardItemModel* model, QWidget *parent = 0);
+    explicit Pivot_Selector_By_Hand_Dialog(QStandardItemModel* model, QWidget *parent = nullptr);
     ~Pivot_Selector_By_Hand_Dialog();
 
 private slots:

@@ -8,13 +8,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 
-    QMenu* gui_plugin_menu=new QMenu(this);
-    QMenu* pivot_plugin_menu=new QMenu(this);
-    QMenu* result_reporter_plugin_menu=new QMenu(this);
-    QMenu* db_plugin_menu=new QMenu(this);
-    QMenu* elmelet_plugin_menu=new QMenu(this);
-    QMenu* Settings_menu=new QMenu(this);
-    QMenu* Help=new QMenu(this);
+    auto *gui_plugin_menu=new QMenu(this);
+    auto *pivot_plugin_menu=new QMenu(this);
+    auto *result_reporter_plugin_menu=new QMenu(this);
+    auto *db_plugin_menu=new QMenu(this);
+    auto *elmelet_plugin_menu=new QMenu(this);
+    auto *Settings_menu=new QMenu(this);
+    auto *Help=new QMenu(this);
     ui->setupUi(this);
 }
 

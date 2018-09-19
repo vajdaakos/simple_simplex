@@ -13,7 +13,7 @@ this->indulo=indulo;
 
 this->result=result;
 
-result_reporter_dialog* dialogwindow=new result_reporter_dialog(this->indulo,this->result,lsz,pivot_modszer,vari_name,parent);
+auto *dialogwindow=new result_reporter_dialog(this->indulo,this->result,lsz,pivot_modszer,vari_name,parent);
 dialogwindow->setAttribute(Qt::WA_DeleteOnClose);
 dialogwindow->show();
 

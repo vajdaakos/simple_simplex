@@ -1,7 +1,7 @@
 #include "result_reporter_dialog.h"
 #include "ui_result_reporter_dialog.h"
 #include <QDebug>
-result_reporter_dialog::result_reporter_dialog(QStandardItemModel *indulo, QStandardItemModel *result, int lsz, QString pivot_modszer, QString vari_name, QWidget *parent) :
+result_reporter_dialog::result_reporter_dialog(QStandardItemModel *indulo, QStandardItemModel *result, int lsz, const QString& pivot_modszer, const QString& vari_name, QWidget *parent) :
     QDialog(parent),
     indulo(indulo),
     result(result),
@@ -44,7 +44,7 @@ result_reporter_dialog::result_reporter_dialog(QStandardItemModel *indulo, QStan
     if (is_optimalis())
     {
         if (is_megengedett())
-        ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><br>A megoldás optimális megoldás.");
+            ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><br>A megoldás optimális megoldás.");
         if (is_degeneralt())
         {
             ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><br>A megoldás degenerált.");
@@ -70,7 +70,7 @@ result_reporter_dialog::result_reporter_dialog(QStandardItemModel *indulo, QStan
         ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><br>Az eredménytáblában a primál változók értékei:");
         for (int row=1;row<this->eredmeny_result->rowCount();++row)
         {
-            if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith(vari_name)==true)
+            if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith(vari_name))
             {
                 ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><font color=red>"+(this->eredmeny_result->verticalHeaderItem(row))->text()+"</font> = "+QString::number(this->eredmeny_result->data(this->eredmeny_result->index(row,this->eredmeny_result->columnCount()-1)).toDouble()));
             }
@@ -82,7 +82,7 @@ result_reporter_dialog::result_reporter_dialog(QStandardItemModel *indulo, QStan
         ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><br>Az eredménytáblában a felesleg változók értékei:");
         for (int row=1;row<this->eredmeny_result->rowCount();++row)
         {
-            if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("Korl")==true || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("*Korl")==true || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("v")==true)
+            if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("Korl") || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("*Korl") || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("v"))
             {
                 ui->szoveges_eredmeny->setText(ui->szoveges_eredmeny->text()+"<br><font color=blue>"+(this->eredmeny_result->verticalHeaderItem(row))->text()+"</font> = "+QString::number(this->eredmeny_result->data(this->eredmeny_result->index(row,this->eredmeny_result->columnCount()-1)).toDouble()));
             }
@@ -102,7 +102,7 @@ result_reporter_dialog::~result_reporter_dialog()
     delete ui;
 }
 
-void result_reporter_dialog::on_result_reporter_dialog_finished(int result)
+void result_reporter_dialog::on_result_reporter_dialog_finished()
 {
     this->deleteLater();
 }
@@ -178,7 +178,7 @@ bool result_reporter_dialog::is_degeneralt()
 {
 for (int row=1;row<this->eredmeny_result->rowCount();++row)
 {
-    if (this->eredmeny_result->data(this->eredmeny_result->index(row,this->eredmeny_result->columnCount()-1)).toDouble()==0 && this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith(vari_name)==true)
+    if (this->eredmeny_result->data(this->eredmeny_result->index(row,this->eredmeny_result->columnCount()-1)).toDouble()==0 && this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith(vari_name))
     {
         return true;
 
@@ -190,7 +190,7 @@ bool result_reporter_dialog::x_marad()
 {
     for (int row=1;row<this->eredmeny_result->rowCount();++row)
     {
-        if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith(vari_name)==true)
+        if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith(vari_name))
         {
             return true;
 
@@ -203,7 +203,7 @@ bool result_reporter_dialog::v_marad()
 {
     for (int row=1;row<this->eredmeny_result->rowCount();++row)
     {
-        if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("Korl")==true || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("*Korl")==true || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("v")==true)
+        if (this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("Korl") || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("*Korl") || this->eredmeny_result->verticalHeaderItem(row)->text().QString::startsWith("v"))
         {
             return true;
 

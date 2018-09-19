@@ -9,7 +9,7 @@
 #include <QSharedDataPointer>
 #include <QStringRef>
 #include <QPushButton>
-Db_loader::Db_loader(QStandardItemModel* exercise, QString baseurl="http://web-okt.duf.hu/opkut.php/", QWidget *parent) :
+Db_loader::Db_loader(QStandardItemModel* exercise, QString const &baseurl="http://web-okt.duf.hu/opkut.php/", QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Db_loader)
 {
@@ -66,7 +66,7 @@ void Db_loader::keszvan()
         on_hibavan();
         return;
     }
-    if(doc.isNull()==false){
+    if(!doc.isNull()){
 
         ui->comboBox->clear();
         ComboboxItem* item_0=new ComboboxItem(this,0,0,0,"Válassz feladatot!");
@@ -94,7 +94,7 @@ void Db_loader::on_hibavan(){
 
     QMessageBox::critical(this,"Hálózati hiba!","ErrorNo: " + QString::number(reply->error()) + " for url: " + ui->url_label->text()+ "<br>Request failed, " + reply->errorString());
     ui->comboBox->setEnabled(false);
-    return;
+
 }
 
 void Db_loader::keszvan_elem()
@@ -107,7 +107,7 @@ void Db_loader::keszvan_elem()
         on_hibavan();
         return;
     }
-    if(doc.isNull()==false){
+    if(!doc.isNull()){
         if(doc.object()["elem"].toObject()["records"].toArray().count()>0){
             this->exercise->clear();
             this->exercise->setColumnCount((ui->comboBox->currentData().value<QSharedPointer<ComboboxItem>>()->t)+2);

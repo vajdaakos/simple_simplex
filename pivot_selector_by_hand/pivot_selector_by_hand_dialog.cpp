@@ -19,7 +19,7 @@ Pivot_Selector_By_Hand_Dialog::~Pivot_Selector_By_Hand_Dialog()
 
 void Pivot_Selector_By_Hand_Dialog::on_pushButton_clicked()
 {
-    QStandardItemModel* model=dynamic_cast<QStandardItemModel*>(this->ui->tableView->model());
+    auto *model=dynamic_cast<QStandardItemModel*>(this->ui->tableView->model());
     if(this->ui->tableView->selectionModel()->selectedIndexes().count()<1 || this->ui->tableView->selectionModel()->selectedIndexes().at(0).row()==0 || this->ui->tableView->selectionModel()->selectedIndexes().at(0).column()>this->ui->tableView->model()->columnCount()-2 || model->verticalHeaderItem(this->ui->tableView->selectionModel()->selectedIndexes().at(0).row())->text()=="c" )
     {
 

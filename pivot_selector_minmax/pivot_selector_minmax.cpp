@@ -2,9 +2,8 @@
 
 #include <QDebug>
 
-Pivot_selector_minmax::Pivot_selector_minmax()
-{
-}
+Pivot_selector_minmax::Pivot_selector_minmax()=default;
+
 QString Pivot_selector_minmax::Name() const
 {
     return "Minmax";

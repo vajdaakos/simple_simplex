@@ -18,10 +18,10 @@ class Mainvindow_gui_plugin : public QWidget, public Mainwindow_Gui_Plugin_Inter
     Q_PLUGIN_METADATA(IID "com.imaddes.Fules_Mainwindow_gui_plugin/1.0.0" FILE "fules.json")
     Q_INTERFACES(Mainwindow_Gui_Plugin_Interface)
 public:
-    explicit Mainvindow_gui_plugin(QWidget *parent = 0);
-    ~Mainvindow_gui_plugin();
+    explicit Mainvindow_gui_plugin(QWidget *parent = nullptr);
+    ~Mainvindow_gui_plugin() override;
 
-    QString Name() const;
+    QString Name() const override;
 
 signals:
     void sor_oszlop_db(int,int) Q_DECL_FINAL;

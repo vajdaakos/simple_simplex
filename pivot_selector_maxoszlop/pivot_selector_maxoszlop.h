@@ -19,7 +19,7 @@ signals:
 public slots:
 
 private:
-    QString Name() const;
+    QString Name() const override;
     int  select_max_from_row(int row,QStandardItemModel* model);
 
 };

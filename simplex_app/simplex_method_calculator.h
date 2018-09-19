@@ -27,7 +27,7 @@ class Simplex_method_calculator: public QWidget
 
 public:
     Simplex_method_calculator();
-    void start(int, char *[], QDir plugins_dir);
+    void start(int, char *[], const QDir &plugins_dir);
 
 private:
     QStandardItemModel *indulo_feladat;
@@ -59,7 +59,7 @@ private:
 
 
     void set_up();
-    void set_up_plugins(QDir plugins_dir);
+    void set_up_plugins(const QDir &plugins_dir);
 
     void set_variable_index(int variable_index);
     void set_variable_name(QString variable_name);
@@ -117,7 +117,7 @@ public slots:
     void do_when_make_indulo_matrix();
     void do_when_szamol_clicked();
     void do_when_post_pivot_element(QModelIndex index);
-    void do_when_indulo_feladat_changed(QModelIndex i, QModelIndex i2, QVector<int> j);
+    void do_when_indulo_feladat_changed(QModelIndex i, QModelIndex i2, const QVector<int> &j);
     void do_when_exercise_loaded(QStandardItemModel*);
     void do_when_kanonikus_clicked();
     void do_when_indulo_matrix_clicked();

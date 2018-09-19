@@ -12,7 +12,7 @@ QWidget *Non_numeric_Delegate::createEditor(QWidget *parent, const QStyleOptionV
 {
     if(index.row()==0)
     {
-        QComboBox *editor = new QComboBox(parent);
+        auto *editor = new QComboBox(parent);
         editor->addItem("max");
         editor->addItem("min");
 
@@ -20,7 +20,7 @@ QWidget *Non_numeric_Delegate::createEditor(QWidget *parent, const QStyleOptionV
     }
     else
     {
-    QComboBox *editor = new QComboBox(parent);
+    auto *editor = new QComboBox(parent);
     editor->addItem("=>");
     editor->addItem("<=");
     editor->addItem("=");
@@ -29,13 +29,13 @@ QWidget *Non_numeric_Delegate::createEditor(QWidget *parent, const QStyleOptionV
 }
 void Non_numeric_Delegate::setEditorData(QWidget *editor, const QModelIndex &index) const
 {
-    QComboBox *comboBox = static_cast<QComboBox*>(editor);
+    auto *comboBox = dynamic_cast<QComboBox*>(editor);
       int value = index.model()->data(index, Qt::EditRole).toUInt();
       comboBox->setCurrentIndex(value);
 }
 void Non_numeric_Delegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const
 {
-QComboBox *combobox = static_cast<QComboBox*>(editor);
+auto *combobox = dynamic_cast<QComboBox*>(editor);
     QString value = combobox->currentText();
     model->setData(index,value,Qt::EditRole);
 

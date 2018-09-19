@@ -14,8 +14,8 @@ class Result_Reporter_Default : public QDialog, public Result_Report_Plugin_Inte
     Q_INTERFACES(Result_Report_Plugin_Interface)
 
 public:
-    explicit Result_Reporter_Default(QWidget *parent = 0);
-    QString Name() const;
+    explicit Result_Reporter_Default(QWidget *parent = nullptr);
+    QString Name() const override;
 
     void show_result_report(QStandardItemModel* indulo, QStandardItemModel* result, int lsz, QString pivot_modszer, QString vari_name, QWidget *parent = nullptr) Q_DECL_OVERRIDE;
 

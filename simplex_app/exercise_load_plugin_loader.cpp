@@ -37,7 +37,7 @@ void exercise_load_plugin_loader::trigger_plugin(QAction* menu_action)
 {
 
     QVariant v = menu_action->data();
-    Exercise_Load_Plugin_Interface* loader = (Exercise_Load_Plugin_Interface *) v.value<void *>();
+    auto *loader = reinterpret_cast<Exercise_Load_Plugin_Interface *>(v.value<void *>());
     loader->post_exercise(dynamic_cast<Simplex_method_calculator*>(parent_)->temp_for_exercise_load);
 
 }

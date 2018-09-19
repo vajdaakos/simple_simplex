@@ -1,13 +1,14 @@
 #include "result_reporter_dialog.h"
 #include "ui_result_reporter_dialog.h"
 #include <QDebug>
+#include <utility>
 result_reporter_dialog::result_reporter_dialog(QStandardItemModel *indulo, QStandardItemModel *result, int lsz, QString pivot_modszer, QString vari_name, QWidget *parent) :
     QDialog(parent),
     indulo(indulo),
     result(result),
     lsz(lsz),
-    pivot_modszer(pivot_modszer),
-    vari_name(vari_name),
+    pivot_modszer(std::move(pivot_modszer)),
+    vari_name(std::move(vari_name)),
     ui(new Ui::result_reporter_dialog)
 {
     eredmeny_indulo= new QStandardItemModel(this);
@@ -41,7 +42,7 @@ result_reporter_dialog::~result_reporter_dialog()
     delete ui;
 }
 
-void result_reporter_dialog::on_result_reporter_dialog_finished(int result)
+void result_reporter_dialog::on_result_reporter_dialog_finished()
 {
     this->deleteLater();
 }

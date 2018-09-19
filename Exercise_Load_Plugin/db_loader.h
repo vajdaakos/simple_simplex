@@ -14,7 +14,7 @@ class Db_loader : public QDialog
     Q_OBJECT
 
 public:
-    explicit Db_loader(QStandardItemModel *exercise, QString baseurl, QWidget *parent = 0);
+    explicit Db_loader(QStandardItemModel *exercise,  QString const &baseurl, QWidget *parent = nullptr);
     ~Db_loader();
 signals:
 void elfogadva(QStandardItemModel *exercise);
@@ -37,7 +37,7 @@ private:
     QString baseurl;
     QNetworkRequest req;
     QNetworkReply* reply;
-    QNetworkReply* reply2;
+    QNetworkReply* reply2{};
 
 };
 
