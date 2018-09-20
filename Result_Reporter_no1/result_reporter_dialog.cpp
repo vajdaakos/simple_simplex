@@ -213,21 +213,28 @@ bool result_reporter_dialog::v_marad()
 }
 bool result_reporter_dialog::is_kesz()
 {
+    bool van_elem=false;
     for (int col=0;col<this->eredmeny_result->columnCount()-1;++col)
     {
+        bool nemkorlatos=true;
+
         if (this->eredmeny_result->data(this->eredmeny_result->index(0,col)).toDouble()>0)
         {
+
             for (int row=1;row<this->eredmeny_result->rowCount()-1;++row)
             {
                 if ((this->eredmeny_result->data(this->eredmeny_result->index(row,col)).toDouble())/(this->eredmeny_result->data(this->eredmeny_result->index(row,eredmeny_result->columnCount()-1)).toDouble())>0)
                  {
 
-                    return false;
+                    nemkorlatos=false;
+                    van_elem=true;
 
                 }
             }
+        if(nemkorlatos)
+            return nemkorlatos;
 
         }
     }
-return true;
+return van_elem;
 }
