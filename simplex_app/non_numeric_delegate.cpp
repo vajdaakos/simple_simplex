@@ -30,7 +30,7 @@ QWidget *Non_numeric_Delegate::createEditor(QWidget *parent, const QStyleOptionV
 void Non_numeric_Delegate::setEditorData(QWidget *editor, const QModelIndex &index) const
 {
     auto *comboBox = dynamic_cast<QComboBox*>(editor);
-      int value = index.model()->data(index, Qt::EditRole).toUInt();
+    int value = index.model()->data(index, Qt::EditRole).toInt();
       comboBox->setCurrentIndex(value);
 }
 void Non_numeric_Delegate::setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const

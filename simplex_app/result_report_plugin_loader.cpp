@@ -24,7 +24,7 @@ void Result_Report_plugin_Loader::load_plugins(QDir plugins_dir)
                 QAction* menu_action=new QAction(result_reporter_interface->Name(),main_window);
                 main_window->result_reporter_plugin_menu->addAction(menu_action);
                 result_reporter_plugin_group->addAction(menu_action);
-                QVariant v = qVariantFromValue((void *) result_reporter_interface);
+                QVariant v = qVariantFromValue(reinterpret_cast<void *>(result_reporter_interface));
                 menu_action->setData(v);
                 menu_action->setCheckable(true);
                 connect(main_window->result_reporter_plugin_menu,SIGNAL(triggered(QAction*)),this,SLOT(set_result_reporter(QAction*)));

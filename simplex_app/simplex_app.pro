@@ -90,4 +90,7 @@ RESOURCES += \
 
 INSTALLS += target
 
+DISTFILES += \
+    uml.qmodel
+
 

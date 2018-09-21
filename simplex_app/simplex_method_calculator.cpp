@@ -298,7 +298,7 @@ void Simplex_method_calculator::set_kanonikus_horizontal_header()
 {
     for(int col = 0; col < (kanonikus_alak->columnCount())-2; ++col)
     {
-        QString oszlopcim= (QString)variable_name + QString::number(col+variable_index);
+        QString oszlopcim= variable_name + QString::number(col+variable_index);
         horizontal_header->append(oszlopcim);
     }
     horizontal_header->append("=");

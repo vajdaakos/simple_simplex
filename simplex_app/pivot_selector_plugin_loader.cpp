@@ -25,7 +25,7 @@ void Pivot_Selector_Plugin_Loader::load_plugins(QDir plugins_dir)
                 QAction* menu_action=new QAction(pivot_selector_interface->Name(),main_window);
                 main_window->pivot_plugin_menu->addAction(menu_action);
                 pivot_selector_plugin_group->addAction(menu_action);
-                QVariant v = qVariantFromValue((void *) pivot_selector_interface);
+                QVariant v = qVariantFromValue(reinterpret_cast<void *>(pivot_selector_interface));
 
 
                 menu_action->setData(v);
