@@ -11,7 +11,7 @@ class Nevjegy : public QDialog
     Q_OBJECT
 
 public:
-    explicit Nevjegy(QWidget *parent = 0);
+    explicit Nevjegy(QWidget *parent = nullptr);
     ~Nevjegy();
 
 private:

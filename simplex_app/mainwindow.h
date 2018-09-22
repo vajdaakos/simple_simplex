@@ -19,7 +19,7 @@ class MainWindow : public QMainWindow
     friend class Simplex_method_calculator;
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
 
 
     ~MainWindow();

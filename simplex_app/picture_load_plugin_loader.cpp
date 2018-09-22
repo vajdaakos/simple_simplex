@@ -20,7 +20,7 @@ void picture_load_plugin_loader::load_plugins(QDir plugins_dir)
             if (picture_load_plugin_interface)
             {
                 QAction* menu_action=new QAction(picture_load_plugin_interface->Name(),main_window);
-                QVariant v = qVariantFromValue((void *) picture_load_plugin_interface);
+                QVariant v = qVariantFromValue(reinterpret_cast<void *>(picture_load_plugin_interface));
                 menu_action->setData(v);
                 main_window->elmelet_plugin_menu->addAction(menu_action);
                 connect(main_window->elmelet_plugin_menu,SIGNAL(triggered(QAction*)),this,SLOT(trigger_plugin(QAction*)));

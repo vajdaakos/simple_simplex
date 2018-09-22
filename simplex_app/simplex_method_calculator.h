@@ -13,7 +13,7 @@
 #include "picture_load_plugin_loader.h"
 #include "delegate_for_numbers.h"
 #include "non_numeric_delegate.h"
-class  Result_Report_plugin_Loader;
+class Result_Report_plugin_Loader;
 class picture_load_plugin_loader;
 class gui_plugin_loader;
 class Pivot_Selector_Plugin_Loader;
@@ -49,12 +49,12 @@ private:
     Non_numeric_Delegate* non_numeric_delegate;
 
 
-    QString pivot_modszer;
     MainWindow* w;
     QString variable_name;
     pivoter *pivoter_;
     int variable_index;
     int lepesszam;
+    QString pivot_modszer;
     bool vegigszamolom=false;
 
 
