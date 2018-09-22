@@ -9,7 +9,7 @@
 #include <QSharedDataPointer>
 #include <QStringRef>
 #include <QPushButton>
-Db_loader::Db_loader(QStandardItemModel* exercise, QString const &baseurl="http://web-okt.duf.hu/opkut.php/", QWidget *parent) :
+Db_loader::Db_loader(QStandardItemModel* exercise, QString const &baseurl="http://server.realm/restapi.php/", QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Db_loader)
 {

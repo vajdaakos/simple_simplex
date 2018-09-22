@@ -4,12 +4,31 @@
 #include <QWidget>
 #include <QStandardItemModel>
 
+/**
+ * @brief 
+ *
+ */
 class Exercise_Load_Plugin_Interface
 {
 public:
+    /**
+     * @brief 
+     *
+     * @param 
+     */
     virtual void post_exercise(QStandardItemModel*)=0;
+    /**
+     * @brief 
+     *
+     * @return QString
+     */
     virtual QString Name() const = 0;
 signals:
+    /**
+     * @brief 
+     *
+     * @param 
+     */
     virtual void do_post_exercise(QStandardItemModel*)=0;
 private:
 
