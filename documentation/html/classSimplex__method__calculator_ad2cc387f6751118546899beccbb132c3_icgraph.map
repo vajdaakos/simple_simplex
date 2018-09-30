@@ -1,8 +1,0 @@
-<map id="initialize_kanonikus" name="initialize_kanonikus">
-<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a6811002fc9108413a15c49bfb615e934" title="do_when_make_kanonikus" alt="" coords="188,31,367,57"/>
-<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a738fbea21ed06f915451a3dac254ea1f" title="do_settings_change" alt="" coords="415,31,553,57"/>
-<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#a1196ebe2d8eee40841d27d7d4d55ead1" title="do_set_beallitasok" alt="" coords="601,5,732,32"/>
-<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#a9f700c57a8358d4eb1c509027f723c42" title="set_up" alt="" coords="835,56,897,83"/>
-<area shape="rect" id="node5" href="$classMainWindow.html#a6b2dd56b38a17a0a121264eb35352380" title="MainWindow::add_menus" alt="" coords="780,5,952,32"/>
-<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#a437e84044e47928c292dd8556c9f0d1e" title="start" alt="" coords="1000,31,1048,57"/>
-</map>

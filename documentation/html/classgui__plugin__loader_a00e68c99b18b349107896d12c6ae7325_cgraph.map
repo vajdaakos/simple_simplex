@@ -1,6 +1,0 @@
-<map id="load_plugins" name="load_plugins">
-<area shape="rect" id="node2" href="$classMainwindow__Gui__Plugin__Interface.html#acc191def3e32eab33e1104255b1875f8" title="Mainwindow_Gui_Plugin\l_Interface::Name" alt="" coords="148,5,312,47"/>
-<area shape="rect" id="node3" href="$classgui__plugin__loader.html#afc8b9f02048ffadd73b4889078db1f6b" title="set_gui" alt="" coords="198,71,262,98"/>
-<area shape="rect" id="node4" href="$classgui__plugin__loader.html#a8f9ef3231b4788b695d14747a464cb84" title="emit_signals_to_set\l_models_of_views" alt="" coords="161,123,299,164"/>
-<area shape="rect" id="node5" href="$classgui__plugin__loader.html#a6b2f33777c792e86b188218b54386005" title="emit_signals_to_set\l_delegates" alt="" coords="161,188,299,229"/>
-</map>
