@@ -1,0 +1,5 @@
+<map id="do_when_szamol_clicked" name="do_when_szamol_clicked">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#ace91fe45c90146263332eac4aea6a745" title="is_two_phase" alt="" coords="257,5,360,32"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#abbae0289e1dfcab3e539ab6096e1937f" title="is_first_phase_ready" alt="" coords="237,56,380,83"/>
+<area shape="rect" id="node4" href="$classPivot__Selector__Plugin__Interface.html#a9850aa1b072e44cc56ff6d8b7483a81e" title="Pivot_Selector_Plugin\l_Interface::pivot_element\l_wanted" alt="" coords="224,107,393,163"/>
+</map>

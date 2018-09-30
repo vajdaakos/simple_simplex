@@ -1,0 +1,5 @@
+<map id="set_pivot_selector" name="set_pivot_selector">
+<area shape="rect" id="node2" href="$classPivot__Selector__Plugin__Loader.html#a00e68c99b18b349107896d12c6ae7325" title="load_plugins" alt="" coords="181,13,276,39"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a393c54550ccc019a4447d40d0e47ff93" title="Simplex_method_calculator\l::set_up_plugins" alt="" coords="324,5,507,47"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#a437e84044e47928c292dd8556c9f0d1e" title="Simplex_method_calculator\l::start" alt="" coords="555,5,737,47"/>
+</map>

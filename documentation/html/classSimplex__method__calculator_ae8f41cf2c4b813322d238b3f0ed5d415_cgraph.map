@@ -1,0 +1,12 @@
+<map id="Simplex_method_calculator::variable_numbers_defined" name="Simplex_method_calculator::variable_numbers_defined">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a9a139d8cdb7be97eff44c7143a8b915c" title="Simplex_method_calculator\l::initialize_indulo_feladat" alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#afcff0009b07937efe20f3d64ea10d550" title="Simplex_method_calculator\l::set_cell_to_null" alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#ae6ef812805cc9013c137cd6f833c6017" title="Simplex_method_calculator\l::set_relation_signs" alt="" coords="236,136,419,177"/>
+<area shape="rect" id="node5" href="$classSimplex__method__calculator.html#a49ee6c7aaf6f7429b2d7bb3110ead22f" title="Simplex_method_calculator\l::set_headers" alt="" coords="236,201,419,243"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#a56de11e5f19d4c81ee0554196834b54e" title="Simplex_method_calculator\l::set_horizontal_headers" alt="" coords="473,103,656,144"/>
+<area shape="rect" id="node9" href="$classSimplex__method__calculator.html#a2c2f21414c20d27ac7ddb8249a2d852c" title="Simplex_method_calculator\l::set_vertical_headers" alt="" coords="473,168,656,209"/>
+<area shape="rect" id="node10" href="$classSimplex__method__calculator.html#a249c2881a8b5853cdc8b53d74dbae50d" title="Simplex_method_calculator\l::do_when_kanonikus_clicked" alt="" coords="467,233,663,275"/>
+<area shape="rect" id="node11" href="$classSimplex__method__calculator.html#ae675adcf3b8b5104430cb65f2e13f729" title="Simplex_method_calculator\l::do_when_indulo_matrix\l_clicked" alt="" coords="473,299,656,355"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#a192807b33ce7bb45bc724eb0542ffa33" title="Simplex_method_calculator\l::get_variable_name" alt="" coords="711,71,893,112"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#a551cf0e83837a64c4757d8c090d6926f" title="Simplex_method_calculator\l::get_variable_index" alt="" coords="711,136,893,177"/>
+</map>

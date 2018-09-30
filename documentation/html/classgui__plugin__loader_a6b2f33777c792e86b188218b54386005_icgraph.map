@@ -1,0 +1,5 @@
+<map id="emit_signals_to_set_delegates" name="emit_signals_to_set_delegates">
+<area shape="rect" id="node2" href="$classgui__plugin__loader.html#a00e68c99b18b349107896d12c6ae7325" title="load_plugins" alt="" coords="192,13,287,39"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a393c54550ccc019a4447d40d0e47ff93" title="Simplex_method_calculator\l::set_up_plugins" alt="" coords="335,5,517,47"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#a437e84044e47928c292dd8556c9f0d1e" title="Simplex_method_calculator\l::start" alt="" coords="565,5,748,47"/>
+</map>

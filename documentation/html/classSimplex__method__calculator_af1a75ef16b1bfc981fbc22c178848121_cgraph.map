@@ -1,0 +1,25 @@
+<map id="Simplex_method_calculator::set_up" name="Simplex_method_calculator::set_up">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a551cf0e83837a64c4757d8c090d6926f" title="Simplex_method_calculator\l::get_variable_index" alt="" coords="985,5,1168,47"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a192807b33ce7bb45bc724eb0542ffa33" title="Simplex_method_calculator\l::get_variable_name" alt="" coords="985,96,1168,137"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#a3f71df14afb7d06f4ed6c1d403d44fcd" title="Simplex_method_calculator\l::do_settings_change" alt="" coords="236,168,419,209"/>
+<area shape="rect" id="node24" href="$classSimplex__method__calculator.html#a706085a8cbc9e0a452da0cd2807c5ea4" title="Simplex_method_calculator\l::do_when_indulo_feladat\l_changed" alt="" coords="236,234,419,290"/>
+<area shape="rect" id="node5" href="$classSimplex__method__calculator.html#a8455d20c883cc45b0c536da0dbe42405" title="Simplex_method_calculator\l::do_when_make_kanonikus" alt="" coords="467,577,653,619"/>
+<area shape="rect" id="node19" href="$classSimplex__method__calculator.html#a49ee6c7aaf6f7429b2d7bb3110ead22f" title="Simplex_method_calculator\l::set_headers" alt="" coords="469,168,651,209"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#abb2932fa0eddff8f3a3737513cad8ece" title="Simplex_method_calculator\l::initialize_kanonikus" alt="" coords="721,687,904,728"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#a8bd16d16283497488f78652ac559802d" title="Simplex_method_calculator\l::do_when_make_kanonikus\l_handle_default_case" alt="" coords="719,459,906,515"/>
+<area shape="rect" id="node11" href="$classSimplex__method__calculator.html#abe265923af8974d3e865d22bcae47b7b" title="Simplex_method_calculator\l::do_when_make_kanonikus\l_handle_greather_than" alt="" coords="719,606,906,662"/>
+<area shape="rect" id="node13" href="$classSimplex__method__calculator.html#a6a697c5e4aff9902f3aea4cf773a7bca" title="Simplex_method_calculator\l::do_when_make_kanonikus\l_handle_equation" alt="" coords="719,753,906,809"/>
+<area shape="rect" id="node14" href="$classSimplex__method__calculator.html#a61d301b932d1206f967048888c292d4b" title="Simplex_method_calculator\l::do_when_make_kanonikus\l_handle_minimum" alt="" coords="719,379,906,435"/>
+<area shape="rect" id="node16" href="$classSimplex__method__calculator.html#a76ad67cd8b8dbba932a14f17fc8a4790" title="Simplex_method_calculator\l::set_kanonikus_horizontal_header" alt="" coords="701,540,924,581"/>
+<area shape="rect" id="node17" href="$classSimplex__method__calculator.html#a4e034d789bea086efc896fee4d15682b" title="Simplex_method_calculator\l::insert_surplus_variable" alt="" coords="721,833,904,875"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#ae0e222fe5b32041564b8202f0d6c33a1" title="Simplex_method_calculator\l::copy_row" alt="" coords="985,589,1168,631"/>
+<area shape="rect" id="node10" href="$classSimplex__method__calculator.html#a16746b6df53ded540cfaba37be7e16dd" title="Simplex_method_calculator\l::set_kanonikus_vertical\l_header_normal_case" alt="" coords="985,485,1168,541"/>
+<area shape="rect" id="node9" href="$classSimplex__method__calculator.html#abd739936d71ced59dd0f76c100fbad48" title="Simplex_method_calculator\l::append_rows_and_clear" alt="" coords="1229,589,1412,631"/>
+<area shape="rect" id="node12" href="$classSimplex__method__calculator.html#aedb2cce0ee5d4b4154e96ca54ce790f8" title="Simplex_method_calculator\l::set_kanonikus_vertical\l_header_equation_case" alt="" coords="985,657,1168,713"/>
+<area shape="rect" id="node15" href="$classSimplex__method__calculator.html#a45683e3dca718442d5495e03c47fc942" title="Simplex_method_calculator\l::set_kanonikus_vertical\l_header_minimum_case" alt="" coords="985,354,1168,410"/>
+<area shape="rect" id="node18" href="$classSimplex__method__calculator.html#a4e959dd505b0924ac592326c21c7d0cf" title="Simplex_method_calculator\l::insert_surplus_variable_header" alt="" coords="972,833,1181,875"/>
+<area shape="rect" id="node20" href="$classSimplex__method__calculator.html#a56de11e5f19d4c81ee0554196834b54e" title="Simplex_method_calculator\l::set_horizontal_headers" alt="" coords="721,51,904,92"/>
+<area shape="rect" id="node21" href="$classSimplex__method__calculator.html#a2c2f21414c20d27ac7ddb8249a2d852c" title="Simplex_method_calculator\l::set_vertical_headers" alt="" coords="721,168,904,209"/>
+<area shape="rect" id="node22" href="$classSimplex__method__calculator.html#a249c2881a8b5853cdc8b53d74dbae50d" title="Simplex_method_calculator\l::do_when_kanonikus_clicked" alt="" coords="715,233,911,275"/>
+<area shape="rect" id="node23" href="$classSimplex__method__calculator.html#ae675adcf3b8b5104430cb65f2e13f729" title="Simplex_method_calculator\l::do_when_indulo_matrix\l_clicked" alt="" coords="721,299,904,355"/>
+</map>

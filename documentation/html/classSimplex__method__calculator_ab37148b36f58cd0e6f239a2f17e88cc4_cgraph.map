@@ -1,0 +1,12 @@
+<map id="do_when_post_pivot_element" name="do_when_post_pivot_element">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a6c9d704502a20f4d398462056a54553a" title="copy_model_from_to" alt="" coords="209,5,351,32"/>
+<area shape="rect" id="node4" href="$classpivoter.html#a88a2b1b75602d2e5546e6e5229bc11f4" title="pivoter::do_pivot" alt="" coords="221,56,339,83"/>
+<area shape="rect" id="node5" href="$classSimplex__method__calculator.html#ad8c94cbc09806dce2abd4a59cec76184" title="remove_surplus_from\l_column" alt="" coords="207,107,353,149"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#a6e298cf62c4747eb392468602cdee06b" title="do_when_szamol_clicked" alt="" coords="195,173,365,200"/>
+<area shape="rect" id="node10" href="$classResult__Report__Plugin__Interface.html#a8df46fe5175b7500bc185768bc187165" title="Result_Report_Plugin\l_Interface::show_result\l_report" alt="" coords="201,224,359,280"/>
+<area shape="rect" id="node11" href="$classPivot__Selector__Plugin__Interface.html#acc191def3e32eab33e1104255b1875f8" title="Pivot_Selector_Plugin\l_Interface::Name" alt="" coords="205,305,355,346"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a0e462a3a1177f4431c9a63b98389a4d1" title="copy_model_data_from_to" alt="" coords="413,5,588,32"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#ace91fe45c90146263332eac4aea6a745" title="is_two_phase" alt="" coords="449,123,552,149"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#abbae0289e1dfcab3e539ab6096e1937f" title="is_first_phase_ready" alt="" coords="429,173,572,200"/>
+<area shape="rect" id="node9" href="$classPivot__Selector__Plugin__Interface.html#a9850aa1b072e44cc56ff6d8b7483a81e" title="Pivot_Selector_Plugin\l_Interface::pivot_element\l_wanted" alt="" coords="416,224,585,280"/>
+</map>

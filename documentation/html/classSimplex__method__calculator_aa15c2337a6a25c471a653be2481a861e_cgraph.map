@@ -1,0 +1,11 @@
+<map id="do_when_exercise_loaded" name="do_when_exercise_loaded">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a522092b611354342947833c385bba7b1" title="initialize_indulo_feladat" alt="" coords="237,5,393,32"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a0e462a3a1177f4431c9a63b98389a4d1" title="copy_model_data_from_to" alt="" coords="228,56,403,83"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#ab8a5daa901cce2cb1b6493695ecc1011" title="set_headers" alt="" coords="269,107,362,133"/>
+<area shape="rect" id="node5" href="$classSimplex__method__calculator.html#a5ee4f09bffa0c418dff89c3ed2a62e3e" title="set_horizontal_headers" alt="" coords="467,31,623,57"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#a5ceba6a9367f80563021c60c9347c1e8" title="set_vertical_headers" alt="" coords="473,81,616,108"/>
+<area shape="rect" id="node9" href="$classSimplex__method__calculator.html#a0ad764725d24cf7b61f98ffce85384d8" title="do_when_kanonikus_clicked" alt="" coords="451,132,639,159"/>
+<area shape="rect" id="node10" href="$classSimplex__method__calculator.html#a187b6b97629bd4d1433a5d318e3901cb" title="do_when_indulo_matrix\l_clicked" alt="" coords="465,183,624,225"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#ae4dafb3b40c03fbdec194898043c5289" title="get_variable_name" alt="" coords="687,5,817,32"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#aebf6267aa88e5b912f5da77c6b209a9a" title="get_variable_index" alt="" coords="687,56,817,83"/>
+</map>

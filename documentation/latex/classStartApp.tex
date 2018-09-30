@@ -1,0 +1,110 @@
+\hypertarget{classStartApp}{}\section{Start\+App Class Reference}
+\label{classStartApp}\index{Start\+App@{Start\+App}}
+
+
+Starter class of applicaton.  
+
+
+
+
+{\ttfamily \#include $<$startapp.\+h$>$}
+
+
+
+Inherits Q\+Object.
+
+
+
+Collaboration diagram for Start\+App\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStartApp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classStartApp_ac70f07e04b8f7766858ce67d75c3b636}{start\+\_\+\+Application} ()
+\begin{DoxyCompactList}\small\item\em Starts the applicaton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimplex__method__calculator}{Simplex\+\_\+method\+\_\+calculator} $\ast$ \hyperlink{classStartApp_aa3f067219fde69ecd40738af7b179780}{simplex\+\_\+method\+\_\+calculator}
+\item 
+Q\+Dir \hyperlink{classStartApp_aec43484cd57a1722eb328aef4f86f719}{root\+\_\+dir}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Starter class of applicaton. 
+
+A Q\+Application cannot be created in \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}, because it has to inherite from Q\+Object. 
+
+Definition at line 9 of file startapp.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classStartApp_ac70f07e04b8f7766858ce67d75c3b636}\label{classStartApp_ac70f07e04b8f7766858ce67d75c3b636}} 
+\index{Start\+App@{Start\+App}!start\+\_\+\+Application@{start\+\_\+\+Application}}
+\index{start\+\_\+\+Application@{start\+\_\+\+Application}!Start\+App@{Start\+App}}
+\subsubsection{\texorpdfstring{start\+\_\+\+Application()}{start\_Application()}}
+{\footnotesize\ttfamily int Start\+App\+::start\+\_\+\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the applicaton. 
+
+Practically this method starts the application ~\newline
+~\newline
+ This method
+\begin{DoxyItemize}
+\item creates the Q\+Application
+\item instansize a Q\+Dir, whitc is the abbsolute path of the application. Used to generate the plugins dir
+\item instansize a \hyperlink{classSimplex__method__calculator}{Simplex\+\_\+method\+\_\+calculator}, which is the main class of the application
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Enters the main event loop and waits until exit() is called, then returns the value that was set to exit() (which is 0 if exit() is called via quit()). It is necessary to call this function to start event handling. The main event loop receives events from the window system and dispatches these to the application widgets. 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file startapp.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classStartApp_ac70f07e04b8f7766858ce67d75c3b636_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classStartApp_aec43484cd57a1722eb328aef4f86f719}\label{classStartApp_aec43484cd57a1722eb328aef4f86f719}} 
+\index{Start\+App@{Start\+App}!root\+\_\+dir@{root\+\_\+dir}}
+\index{root\+\_\+dir@{root\+\_\+dir}!Start\+App@{Start\+App}}
+\subsubsection{\texorpdfstring{root\+\_\+dir}{root\_dir}}
+{\footnotesize\ttfamily Q\+Dir Start\+App\+::root\+\_\+dir\hspace{0.3cm}{\ttfamily [private]}}
+
+The directory from which the application was started 
+
+Definition at line 20 of file startapp.\+h.
+
+\mbox{\Hypertarget{classStartApp_aa3f067219fde69ecd40738af7b179780}\label{classStartApp_aa3f067219fde69ecd40738af7b179780}} 
+\index{Start\+App@{Start\+App}!simplex\+\_\+method\+\_\+calculator@{simplex\+\_\+method\+\_\+calculator}}
+\index{simplex\+\_\+method\+\_\+calculator@{simplex\+\_\+method\+\_\+calculator}!Start\+App@{Start\+App}}
+\subsubsection{\texorpdfstring{simplex\+\_\+method\+\_\+calculator}{simplex\_method\_calculator}}
+{\footnotesize\ttfamily \hyperlink{classSimplex__method__calculator}{Simplex\+\_\+method\+\_\+calculator}$\ast$ Start\+App\+::simplex\+\_\+method\+\_\+calculator\hspace{0.3cm}{\ttfamily [private]}}
+
+A pointer to the main class of the application 
+
+Definition at line 19 of file startapp.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simplex\+\_\+app/\hyperlink{startapp_8h}{startapp.\+h}\item 
+simplex\+\_\+app/\hyperlink{startapp_8cpp}{startapp.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file alias="simplex_icon">simplex.png</file>
+    </qresource>
+</RCC>

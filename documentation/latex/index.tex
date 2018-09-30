@@ -1,0 +1,108 @@
+\hypertarget{index_credit}{}\section{Other peoples work\+: A big T\+H\+A\+N\+K\+S to them}\label{index_credit}
+icon\+: Tetrahedron by Alexander Skowalsky from the Noun Project
+
+php-\/crud-\/api\+: Maurits van der Schee, git\+: \href{https://github.com/mevdschee/php-crud-api.git,}{\tt https\+://github.\+com/mevdschee/php-\/crud-\/api.\+git,} link\+: \href{https://github.com/mevdschee/php-crud-api}{\tt https\+://github.\+com/mevdschee/php-\/crud-\/api})
+
+~\newline
+~\newline
+
+
+
+
+ 
+
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+This applications purpose is to make learning and teaching of simplex method easier.
+
+The app is totally plugin based. The plugins has to be copied in a subfolder of the \textquotesingle{}plugins\textquotesingle{} folder. The folder depends on the cathegory of the plugin. (See \hyperlink{index_plugins_sec}{Plugins section})
+
+~\newline
+~\newline
+
+
+
+
+ 
+
+ \hypertarget{index_install_sec}{}\section{Installiation}\label{index_install_sec}
+Just unzip and run!
+
+~\newline
+~\newline
+
+
+
+
+ 
+
+\hypertarget{index_plugins_sec}{}\section{Plugins}\label{index_plugins_sec}
+Each cathegory of plugins implements an interface. The interface defines only what methods has to exist. The app doesn\textquotesingle{}t care about how the plugin provides the functionallity, or even provides or not. If the methods existed, they would be loaded. Each interface has its own folder in which the plugin are wanted! In each folder has to be plugin whose filename must include the word \char`\"{}default\char`\"{}!
+
+~\newline
+~\newline
+~\newline
+
+
+
+
+\hypertarget{index_exercise_load_plugins}{}\subsection{exercise\+\_\+load\+\_\+plugins\+: Load exercise from external source}\label{index_exercise_load_plugins}
+
+\begin{DoxyItemize}
+\item Folder name\+: exercise\+\_\+load\+\_\+plugins
+\item Default plugin\+: D\+UE Feladatbank (D\+UE Exercise Bank)
+\item Default plugin filename\+:
+\begin{DoxyItemize}
+\item linux\+: Exercise\+\_\+\+Load\+\_\+\+Plugin\+\_\+default.\+so
+\item windows\+: Exercise\+\_\+\+Load\+\_\+\+Plugin\+\_\+default1.\+dll
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{index_default_plugin}{}\subsubsection{D\+U\+E Feladatbank (\+D\+U\+E Exercise Bank)}\label{index_default_plugin}
+Exercises could be loaded from a couple of sources. Files (X\+ML, excel worksheet, C\+SV, etc.), (various) databases, etc. This plugin uses the exercise bank of the Univerity of Dunaújváros. This exercise bank is a pair of My\+S\+QL database and P\+HP A\+PI. It is not for public use, therefor the U\+RL has been changed in the source code to nonworking example stuff.
+
+~\newline
+ 
+
+\hypertarget{index_gui_plugins}{}\subsection{Gui plugins\+: G\+U\+Is}\label{index_gui_plugins}
+
+\begin{DoxyItemize}
+\item Folder name\+: gui\+\_\+plugins
+\item Default plugin\+: Korcsolya (Skate)
+\item Default plugin filename\+:
+\begin{DoxyItemize}
+\item linux\+: korcsolya\+\_\+default.\+so
+\item windows\+: korcsolya\+\_\+default1.\+dll
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+~\newline
+ 
+
+\hypertarget{index_picture_loader_default}{}\subsection{Picture Loader Plugins}\label{index_picture_loader_default}
+
+\begin{DoxyItemize}
+\item Folder name\+: picture\+\_\+load\+\_\+plugins
+\item Default plugin\+: Elmélet (Theoretics)
+\item Default plugin filename\+:
+\begin{DoxyItemize}
+\item linux\+: picture\+\_\+loader\+\_\+default.\+so
+\item windows\+: picture\+\_\+loader\+\_\+default1.\+dll
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+These plugins load graphics. The default plugin loads process diagrams about the simplex algorithm.
+
+~\newline
+ 
+
+\hypertarget{index_pivot_selector_plugins}{}\subsection{Pivot Element Selector Plugins}\label{index_pivot_selector_plugins}
+~\newline
+
+
+
+
+\hypertarget{index_result_reporter_plugins}{}\subsection{Result Reporter Plugins}\label{index_result_reporter_plugins}
+~\newline
+
+
+
+
+ 

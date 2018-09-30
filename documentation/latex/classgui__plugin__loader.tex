@@ -1,0 +1,190 @@
+\hypertarget{classgui__plugin__loader}{}\section{gui\+\_\+plugin\+\_\+loader Class Reference}
+\label{classgui__plugin__loader}\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+
+
+{\ttfamily \#include $<$gui\+\_\+plugin\+\_\+loader.\+h$>$}
+
+
+
+Inherits Q\+Object.
+
+
+
+Collaboration diagram for gui\+\_\+plugin\+\_\+loader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classgui__plugin__loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgui__plugin__loader_a0d2c0ab3d2eefbc2b6dcc246ea58d43b}{set\+\_\+gui} (Q\+Action $\ast$menuitem)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgui__plugin__loader_a06e6c9395877425822e5f178804962f3}{gui\+\_\+plugin\+\_\+loader} (Q\+Object $\ast$parent=nullptr, \hyperlink{classMainWindow}{Main\+Window} $\ast$w=nullptr)
+\item 
+void \hyperlink{classgui__plugin__loader_afaea2c8da605ce9ee8e2995449a67eda}{load\+\_\+plugins} (Q\+Dir root\+\_\+dir)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classgui__plugin__loader_a41f08e87c06edd90551177c9d26e20b6}{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views} ()
+\item 
+void \hyperlink{classgui__plugin__loader_a1aa2e332cd05954fcb9bbf506450c290}{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Object $\ast$ \hyperlink{classgui__plugin__loader_a6bf4626d341c427f2c72a8b504dd2086}{parent\+\_\+}
+\item 
+\hyperlink{classMainWindow}{Main\+Window} $\ast$ \hyperlink{classgui__plugin__loader_a1ff765127327eec72360c355a6255642}{main\+\_\+window}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgui__plugin__loader_aa57bcac61e09f9c999a2f048dc923409}{Simplex\+\_\+method\+\_\+calculator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file gui\+\_\+plugin\+\_\+loader.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgui__plugin__loader_a06e6c9395877425822e5f178804962f3}\label{classgui__plugin__loader_a06e6c9395877425822e5f178804962f3}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{gui\+\_\+plugin\+\_\+loader()}{gui\_plugin\_loader()}}
+{\footnotesize\ttfamily gui\+\_\+plugin\+\_\+loader\+::gui\+\_\+plugin\+\_\+loader (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr},  }\item[{\hyperlink{classMainWindow}{Main\+Window} $\ast$}]{w = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 9 of file gui\+\_\+plugin\+\_\+loader.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgui__plugin__loader_a1aa2e332cd05954fcb9bbf506450c290}\label{classgui__plugin__loader_a1aa2e332cd05954fcb9bbf506450c290}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates@{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates}}
+\index{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates@{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates()}{emit\_signals\_to\_set\_delegates()}}
+{\footnotesize\ttfamily void gui\+\_\+plugin\+\_\+loader\+::emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+delegates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 95 of file gui\+\_\+plugin\+\_\+loader.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgui__plugin__loader_a1aa2e332cd05954fcb9bbf506450c290_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgui__plugin__loader_a41f08e87c06edd90551177c9d26e20b6}\label{classgui__plugin__loader_a41f08e87c06edd90551177c9d26e20b6}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views@{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views}}
+\index{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views@{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views()}{emit\_signals\_to\_set\_models\_of\_views()}}
+{\footnotesize\ttfamily void gui\+\_\+plugin\+\_\+loader\+::emit\+\_\+signals\+\_\+to\+\_\+set\+\_\+models\+\_\+of\+\_\+views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file gui\+\_\+plugin\+\_\+loader.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgui__plugin__loader_a41f08e87c06edd90551177c9d26e20b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgui__plugin__loader_afaea2c8da605ce9ee8e2995449a67eda}\label{classgui__plugin__loader_afaea2c8da605ce9ee8e2995449a67eda}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!load\+\_\+plugins@{load\+\_\+plugins}}
+\index{load\+\_\+plugins@{load\+\_\+plugins}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{load\+\_\+plugins()}{load\_plugins()}}
+{\footnotesize\ttfamily void gui\+\_\+plugin\+\_\+loader\+::load\+\_\+plugins (\begin{DoxyParamCaption}\item[{Q\+Dir}]{root\+\_\+dir }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file gui\+\_\+plugin\+\_\+loader.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classgui__plugin__loader_afaea2c8da605ce9ee8e2995449a67eda_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgui__plugin__loader_afaea2c8da605ce9ee8e2995449a67eda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgui__plugin__loader_a0d2c0ab3d2eefbc2b6dcc246ea58d43b}\label{classgui__plugin__loader_a0d2c0ab3d2eefbc2b6dcc246ea58d43b}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!set\+\_\+gui@{set\+\_\+gui}}
+\index{set\+\_\+gui@{set\+\_\+gui}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{set\+\_\+gui}{set\_gui}}
+{\footnotesize\ttfamily void gui\+\_\+plugin\+\_\+loader\+::set\+\_\+gui (\begin{DoxyParamCaption}\item[{Q\+Action $\ast$}]{menuitem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Definition at line 78 of file gui\+\_\+plugin\+\_\+loader.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgui__plugin__loader_a0d2c0ab3d2eefbc2b6dcc246ea58d43b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classgui__plugin__loader_aa57bcac61e09f9c999a2f048dc923409}\label{classgui__plugin__loader_aa57bcac61e09f9c999a2f048dc923409}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!Simplex\+\_\+method\+\_\+calculator@{Simplex\+\_\+method\+\_\+calculator}}
+\index{Simplex\+\_\+method\+\_\+calculator@{Simplex\+\_\+method\+\_\+calculator}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{Simplex\+\_\+method\+\_\+calculator}{Simplex\_method\_calculator}}
+{\footnotesize\ttfamily friend class \hyperlink{classSimplex__method__calculator}{Simplex\+\_\+method\+\_\+calculator}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 17 of file gui\+\_\+plugin\+\_\+loader.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgui__plugin__loader_a1ff765127327eec72360c355a6255642}\label{classgui__plugin__loader_a1ff765127327eec72360c355a6255642}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!main\+\_\+window@{main\+\_\+window}}
+\index{main\+\_\+window@{main\+\_\+window}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{main\+\_\+window}{main\_window}}
+{\footnotesize\ttfamily \hyperlink{classMainWindow}{Main\+Window}$\ast$ gui\+\_\+plugin\+\_\+loader\+::main\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file gui\+\_\+plugin\+\_\+loader.\+h.
+
+\mbox{\Hypertarget{classgui__plugin__loader_a6bf4626d341c427f2c72a8b504dd2086}\label{classgui__plugin__loader_a6bf4626d341c427f2c72a8b504dd2086}} 
+\index{gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}!parent\+\_\+@{parent\+\_\+}}
+\index{parent\+\_\+@{parent\+\_\+}!gui\+\_\+plugin\+\_\+loader@{gui\+\_\+plugin\+\_\+loader}}
+\subsubsection{\texorpdfstring{parent\+\_\+}{parent\_}}
+{\footnotesize\ttfamily Q\+Object$\ast$ gui\+\_\+plugin\+\_\+loader\+::parent\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file gui\+\_\+plugin\+\_\+loader.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simplex\+\_\+app/\hyperlink{gui__plugin__loader_8h}{gui\+\_\+plugin\+\_\+loader.\+h}\item 
+simplex\+\_\+app/\hyperlink{gui__plugin__loader_8cpp}{gui\+\_\+plugin\+\_\+loader.\+cpp}\end{DoxyCompactItemize}
