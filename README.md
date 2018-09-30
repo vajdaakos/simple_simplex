@@ -1,5 +1,5 @@
-# simple_simplex
-simplex method calculator in c++/qt
+# simple_simplex - hungarian version (under translation to english)
+simplex method calculator in c++/qt (under documentation)
 
 ___
 
