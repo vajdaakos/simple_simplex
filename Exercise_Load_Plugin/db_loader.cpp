@@ -9,10 +9,13 @@
 #include <QSharedDataPointer>
 #include <QStringRef>
 #include <QPushButton>
-Db_loader::Db_loader(QStandardItemModel* exercise, QString const &baseurl="http://server.realm/restapi.php/", QWidget *parent) :
+Db_loader::Db_loader(QStandardItemModel* exercise, QString const &baseurl="http://web-okt.duf.hu/opkut.php/", QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Db_loader)
 {
+
+
+
     this->exercise=exercise;
     this->exercise->clear();
     network_manager= new QNetworkAccessManager(this);
@@ -31,6 +34,8 @@ Db_loader::Db_loader(QStandardItemModel* exercise, QString const &baseurl="http:
     b->setText(tr("&Mégse"));
     ui->URL->setTextInteractionFlags(Qt::TextSelectableByMouse);
     ui->betekint->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
+
 }
 
 Db_loader::~Db_loader()

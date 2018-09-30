@@ -11,7 +11,7 @@ TEMPLATE = lib
 CONFIG += plugin release no_plugin_name_prefix
 DEFINES += FULES_LIBRARY
 VERSION = 1.0.0
-INSTALLS += target
+
 CONFIG(release, debug|release){
     win32: DESTDIR = ./release/lib
     win32: DLLDESTDIR = ../simplex_app/release/bin/plugins/gui_plugins
@@ -45,24 +45,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    mainvindow_gui_plugin.cpp \
-    delegate_for_numbers.cpp \
-    non_numeric_delegate.cpp
+    mainvindow_gui_plugin_for_fules.cpp \
+    delegate_for_numbers_in_fules.cpp \
+    non_numeric_delegate_in_fules.cpp
 
 HEADERS += \
         #plugin_test.h \
         #plugin_test_global.h \
     mainwindow_gui_plugin_interface.h \
-    mainvindow_gui_plugin.h \
-    delegate_for_numbers.h \
-    non_numeric_delegate.h
+    mainvindow_gui_plugin_for_fules.h \
+    delegate_for_numbers_in_fules.h \
+    non_numeric_delegate_in_fules.h
 
 unix {
     target.path = /usr/lib
-    INSTALLS += target
+
 }
+win32 {
     target.path=../build-fules-Desktop_Qt_5_10_1_MSVC2015_32bit-Release
     INSTALLS += target
+}
 FORMS += \
     mainvindow_gui_plugin.ui
 

@@ -20,18 +20,18 @@ signals:
 
 
 public slots:
-    virtual void do_set_indulo_model_view(QStandardItemModel*)=0;
-    virtual void do_set_kanonikus_alak_model_view(QStandardItemModel*)=0;
-    virtual void do_set_indulo_matrix_model_view(QStandardItemModel*)=0;
-    virtual void do_set_utolso_elotti_allapot_model_view(QStandardItemModel*)=0;
-    virtual void do_set_utolso_allapot_model_view(QStandardItemModel*)=0;
+    virtual void do_set_indulo_model_view(QStandardItemModel *model)=0;
+    virtual void do_set_kanonikus_alak_model_view(QStandardItemModel *model)=0;
+    virtual void do_set_indulo_matrix_model_view(QStandardItemModel *model)=0;
+    virtual void do_set_utolso_elotti_allapot_model_view(QStandardItemModel *model)=0;
+    virtual void do_set_utolso_allapot_model_view(QStandardItemModel *model)=0;
     virtual void do_when_indulo_feladat_changed()=0;
     virtual void do_when_vegigszamol_changed(bool vegigszamolando)=0;
-    virtual void do_when_external_exercise_loaded(int,int)=0;
+    virtual void do_when_external_exercise_loaded(int termteny,int korlfelt)=0;
     virtual void do_when_got_kanonikus_clicked()=0;
     virtual void do_when_got_indulo_matrix_clicked()=0;
-    virtual void do_set_delegate_for_numbers(QStyledItemDelegate*)=0;
-    virtual void do_set_non_numeric_delegate(QItemDelegate*)=0;
+    virtual void do_set_delegate_for_numbers(QStyledItemDelegate *delegate)=0;
+    virtual void do_set_non_numeric_delegate(QItemDelegate *delegate)=0;
     virtual void do_when_button_kezd_clicked(int termteny, int korlfelt)=0;
 
 

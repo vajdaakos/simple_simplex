@@ -5,16 +5,16 @@ Result_Report_plugin_Loader::Result_Report_plugin_Loader(QObject *parent, MainWi
     this->parent_=parent;
     main_window=w;
 }
-void Result_Report_plugin_Loader::load_plugins(QDir plugins_dir)
+void Result_Report_plugin_Loader::load_plugins(QDir root_dir)
 {
 
     auto *result_reporter_plugin_group=new QActionGroup (main_window);
     result_reporter_plugin_group->setExclusive(true);
-    plugins_dir.cd("plugins");
-    plugins_dir.cd("result_reporter_plugins");
-    foreach (QString fileName, plugins_dir.entryList(QDir::Files))
+    root_dir.cd("plugins");
+    root_dir.cd("result_reporter_plugins");
+    foreach (QString fileName, root_dir.entryList(QDir::Files))
     {
-        QPluginLoader pluginLoader(plugins_dir.absoluteFilePath(fileName));
+        QPluginLoader pluginLoader(root_dir.absoluteFilePath(fileName));
         QObject *plugin = pluginLoader.instance();
         if (plugin)
         {

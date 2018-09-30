@@ -160,12 +160,31 @@ void Mainvindow_gui_plugin::do_when_external_exercise_loaded(int termtenyezo ,in
     }
     ui->tableView->setItemDelegateForColumn(ui->termteny->value(),non_numeric_delegate);
 }
-void Mainvindow_gui_plugin::do_set_delegate_for_numbers(QStyledItemDelegate * delegate)
+/**
+ * @brief
+ * A fő program altal biztosított numerikus delegátor beállítása.
+ *
+ * A fő program biztosít agy alap delegátort a numerikus adatoknak. Ebben az osztályban ezt használjuk numerikus delegátornak.
+ *
+ *
+ * @param delegate
+ * A főprogram által biztosított numerikus delegátorra mutató pointer.
+ */
+void Mainvindow_gui_plugin::do_set_delegate_for_numbers(QStyledItemDelegate *delegate)
 {
     this->number_delegator=delegate;
 
 }
-
+/**
+ * @brief
+ * A fő program altal biztosított nem-numerikus delegátor beállítása.
+ *
+ * A fő program biztosít agy alap delegátort a nem-numerikus adatoknak. Ebben az osztályban ezt használjuk nem-numerikus delegátornak.
+ *
+ *
+ * @param delegate
+ * A főprogram által biztosított nem-numerikus delegátorra mutató pointer.
+ */
 void Mainvindow_gui_plugin::do_set_non_numeric_delegate(QItemDelegate * delegate)
 {
     this->non_numeric_delegate=delegate;

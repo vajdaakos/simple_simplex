@@ -14,9 +14,8 @@ QString Exercise_Load_Plugin::Name() const
 void Exercise_Load_Plugin::post_exercise(QStandardItemModel* exercise)
 {
 
-    Db_loader db_loader_dialog_window(exercise,"http://server.realm/restapi.php/",this);
-
-    connect(&db_loader_dialog_window,SIGNAL(elfogadva(QStandardItemModel *)),this,SLOT(do_elfogadva(QStandardItemModel*)));
+    Db_loader db_loader_dialog_window(exercise,"http://web-okt.duf.hu/opkut.php/",this);
+    connect(&db_loader_dialog_window,SIGNAL(elfogadva(QStandardItemModel*)),this,SLOT(do_elfogadva(QStandardItemModel*)));
 
     db_loader_dialog_window.setModal(true);
     db_loader_dialog_window.exec();

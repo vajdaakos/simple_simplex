@@ -30,7 +30,7 @@ CONFIG(debug, debug|release){
     RCC_DIR = debug/rcc
     UI_DIR = debug/ui
 }
-INSTALLS += target
+
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -53,10 +53,10 @@ unix {
     target.path = /usr/lib
     INSTALLS += target
 }
-
+win32{
     target.path=../build-korcsolya-Desktop_Qt_5_10_1_MSVC2015_32bit-Release
     INSTALLS += target
-
+}
 FORMS += \
     mainvindow_gui_plugin.ui
 

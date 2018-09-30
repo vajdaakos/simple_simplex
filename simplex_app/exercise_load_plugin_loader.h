@@ -16,7 +16,7 @@ class exercise_load_plugin_loader : public QObject
     Q_OBJECT
 public:
     explicit exercise_load_plugin_loader(QObject *parent = nullptr, MainWindow *w=nullptr);
-    void load_plugins(QDir plugins_dir);
+    void load_plugins(QDir root_dir);
 private:
 
     QObject* parent_;

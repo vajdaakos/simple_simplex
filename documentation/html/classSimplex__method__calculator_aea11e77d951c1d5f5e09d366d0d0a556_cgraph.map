@@ -1,0 +1,12 @@
+<map id="Simplex_method_calculator::do_when_post_pivot_element" name="Simplex_method_calculator::do_when_post_pivot_element">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a7a90111baf326f1146e85b009b6ef304" title="Simplex_method_calculator\l::copy_model_from_to" alt="" coords="267,5,449,47"/>
+<area shape="rect" id="node4" href="$classpivoter.html#a65c7ac806d2eee63243e9d7394e76394" title="pivoter::do_pivot" alt="" coords="299,71,417,98"/>
+<area shape="rect" id="node5" href="$classSimplex__method__calculator.html#ab5bb8261a97db63956fad14a0c1f0f05" title="Simplex_method_calculator\l::remove_surplus_from_column" alt="" coords="256,123,460,164"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#aac8e0f77b94815c04834b226637b0d6a" title="Simplex_method_calculator\l::do_when_szamol_clicked" alt="" coords="267,188,449,229"/>
+<area shape="rect" id="node10" href="$classResult__Report__Plugin__Interface.html#a7dc45f2c25e0f4f4f99b2d7cd1799aa0" title="Result_Report_Plugin\l_Interface::show_result\l_report" alt="" coords="279,254,437,310"/>
+<area shape="rect" id="node11" href="$classPivot__Selector__Plugin__Interface.html#a35b4215e27a169edc2260f2e578de184" title="Pivot_Selector_Plugin\l_Interface::Name" alt="" coords="283,335,433,376"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a9423cd0eeed431e7f969b4ef1b222925" title="Simplex_method_calculator\l::copy_model_data_from_to" alt="" coords="508,5,691,47"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#ada7c9fda10b113b93cc80d77c57727da" title="Simplex_method_calculator\l::is_two_phase" alt="" coords="508,123,691,164"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#a7e8682e4e121b5b171b34cd0b127fb3e" title="Simplex_method_calculator\l::is_first_phase_ready" alt="" coords="508,188,691,229"/>
+<area shape="rect" id="node9" href="$classPivot__Selector__Plugin__Interface.html#a79edca6930746a137a95a26239f7af5e" title="Pivot_Selector_Plugin\l_Interface::pivot_element\l_wanted" alt="" coords="515,254,684,310"/>
+</map>

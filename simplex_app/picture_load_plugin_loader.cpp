@@ -5,14 +5,14 @@ picture_load_plugin_loader::picture_load_plugin_loader(QObject *parent, MainWind
     this->parent_=parent;
     main_window=w;
 }
-void picture_load_plugin_loader::load_plugins(QDir plugins_dir)
+void picture_load_plugin_loader::load_plugins(QDir root_dir)
 {
-    plugins_dir.cd("plugins");
-    plugins_dir.cd("picture_load_plugins");
-    foreach (QString fileName, plugins_dir.entryList(QDir::Files))
+    root_dir.cd("plugins");
+    root_dir.cd("picture_load_plugins");
+    foreach (QString fileName, root_dir.entryList(QDir::Files))
     {
 
-        QPluginLoader pluginLoader(plugins_dir.absoluteFilePath(fileName));
+        QPluginLoader pluginLoader(root_dir.absoluteFilePath(fileName));
         QObject *plugin = pluginLoader.instance();
         if (plugin)
         {

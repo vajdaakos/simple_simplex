@@ -13,7 +13,7 @@ class picture_load_plugin_loader : public QObject
 
 public:
     explicit picture_load_plugin_loader(QObject *parent = nullptr,MainWindow *w=nullptr);
-    void load_plugins(QDir plugins_dir);
+    void load_plugins(QDir root_dir);
 signals:
 
 public slots:

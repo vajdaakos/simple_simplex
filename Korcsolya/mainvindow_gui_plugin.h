@@ -1,5 +1,4 @@
-#ifndef MAINVINDOW_GUI_PLUGIN_H
-#define MAINVINDOW_GUI_PLUGIN_H
+#pragma once
 
 #include <QWidget>
 #include <QStandardItemModel>
@@ -72,5 +71,3 @@ private:
     QStyledItemDelegate *number_delegator;
     QItemDelegate *non_numeric_delegate;
 };
-
-#endif // MAINVINDOW_GUI_PLUGIN_H

@@ -1,0 +1,10 @@
+<map id="do_when_indulo_matrix_clicked" name="do_when_indulo_matrix_clicked">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#ab8a5daa901cce2cb1b6493695ecc1011" title="set_headers" alt="" coords="212,81,305,108"/>
+<area shape="rect" id="node3" href="$classSimplex__method__calculator.html#a738fbea21ed06f915451a3dac254ea1f" title="do_settings_change" alt="" coords="371,31,510,57"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#ae494c8e86a25f20a49ac04490448cc09" title="variable_numbers_defined" alt="" coords="354,81,527,108"/>
+<area shape="rect" id="node9" href="$classSimplex__method__calculator.html#aa15c2337a6a25c471a653be2481a861e" title="do_when_exercise_loaded" alt="" coords="353,132,528,159"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#a1196ebe2d8eee40841d27d7d4d55ead1" title="do_set_beallitasok" alt="" coords="576,5,707,32"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#a9f700c57a8358d4eb1c509027f723c42" title="set_up" alt="" coords="810,56,871,83"/>
+<area shape="rect" id="node5" href="$classMainWindow.html#a6b2dd56b38a17a0a121264eb35352380" title="MainWindow::add_menus" alt="" coords="755,5,927,32"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#a437e84044e47928c292dd8556c9f0d1e" title="start" alt="" coords="975,31,1023,57"/>
+</map>

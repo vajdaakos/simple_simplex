@@ -1,0 +1,11 @@
+<map id="get_variable_index" name="get_variable_index">
+<area shape="rect" id="node2" href="$classSimplex__method__calculator.html#a1196ebe2d8eee40841d27d7d4d55ead1" title="do_set_beallitasok" alt="" coords="752,5,883,32"/>
+<area shape="rect" id="node5" href="$classSimplex__method__calculator.html#a5ee4f09bffa0c418dff89c3ed2a62e3e" title="set_horizontal_headers" alt="" coords="184,81,340,108"/>
+<area shape="rect" id="node8" href="$classSimplex__method__calculator.html#a9f700c57a8358d4eb1c509027f723c42" title="set_up" alt="" coords="787,56,848,83"/>
+<area shape="rect" id="node3" href="$classMainWindow.html#a6b2dd56b38a17a0a121264eb35352380" title="MainWindow::add_menus" alt="" coords="931,5,1103,32"/>
+<area shape="rect" id="node4" href="$classSimplex__method__calculator.html#a437e84044e47928c292dd8556c9f0d1e" title="start" alt="" coords="1151,31,1199,57"/>
+<area shape="rect" id="node6" href="$classSimplex__method__calculator.html#ab8a5daa901cce2cb1b6493695ecc1011" title="set_headers" alt="" coords="388,81,481,108"/>
+<area shape="rect" id="node7" href="$classSimplex__method__calculator.html#a738fbea21ed06f915451a3dac254ea1f" title="do_settings_change" alt="" coords="547,31,686,57"/>
+<area shape="rect" id="node9" href="$classSimplex__method__calculator.html#ae494c8e86a25f20a49ac04490448cc09" title="variable_numbers_defined" alt="" coords="530,81,703,108"/>
+<area shape="rect" id="node10" href="$classSimplex__method__calculator.html#aa15c2337a6a25c471a653be2481a861e" title="do_when_exercise_loaded" alt="" coords="529,132,704,159"/>
+</map>

@@ -58,10 +58,7 @@ HEADERS += \
     db_loader.h \
     comboboxitem.h
 
-unix {
-    target.path = /usr/lib
-    INSTALLS += target
-}
+
 
 DISTFILES += \
     exercise_load_plugin_interface.json

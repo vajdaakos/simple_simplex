@@ -12,7 +12,7 @@ gui_plugin_loader::gui_plugin_loader(QObject *parent, MainWindow *w) : QObject(p
     main_window=w;
 }
 
-void gui_plugin_loader::load_plugins(QDir plugins_dir)
+void gui_plugin_loader::load_plugins(QDir root_dir)
 {
     main_window->central_widget=new QStackedWidget(main_window);
     main_window->setCentralWidget(main_window->centralWidget());
@@ -20,11 +20,11 @@ void gui_plugin_loader::load_plugins(QDir plugins_dir)
     auto *gui_plugin_group=new QActionGroup (main_window);
     gui_plugin_group->setExclusive(true);
 
-    plugins_dir.cd("plugins");
-    plugins_dir.cd("gui_plugins");
-    foreach (QString fileName, plugins_dir.entryList(QDir::Files)) {
+    root_dir.cd("plugins");
+    root_dir.cd("gui_plugins");
+    foreach (QString fileName, root_dir.entryList(QDir::Files)) {
 
-        QPluginLoader pluginLoader(plugins_dir.absoluteFilePath(fileName));
+        QPluginLoader pluginLoader(root_dir.absoluteFilePath(fileName));
         QObject *plugin = pluginLoader.instance();
         if (plugin) {
 
@@ -33,7 +33,7 @@ void gui_plugin_loader::load_plugins(QDir plugins_dir)
             if (gui_interface)
             {
                 QAction* menu_action=new QAction(gui_interface->Name(),main_window);
-                QVariant v = qVariantFromValue((void *) gui_interface);
+                QVariant v = qVariantFromValue(reinterpret_cast<void *>(gui_interface) );
                 menu_action->setData(v);
                 main_window->gui_plugin_menu->addAction(menu_action);
                 menu_action->setCheckable(true);
@@ -77,9 +77,9 @@ void gui_plugin_loader::load_plugins(QDir plugins_dir)
 }
 void gui_plugin_loader::set_gui(QAction* menuitem)
 {
-     QVariant v = menuitem->data();
-     auto *gui = reinterpret_cast<Mainwindow_Gui_Plugin_Interface *>(v.value<void *>());
-     main_window->central_widget->setCurrentWidget(dynamic_cast<QWidget*>(gui));
+    QVariant v = menuitem->data();
+    auto *gui = reinterpret_cast<Mainwindow_Gui_Plugin_Interface *>(v.value<void *>());
+    main_window->central_widget->setCurrentWidget(dynamic_cast<QWidget*>(gui));
 }
 
 void gui_plugin_loader::emit_signals_to_set_models_of_views()

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <simplex_method_calculator.h>
+//#include <simplex_method_calculator.h>
 #include <QDialog>
 #include <QString>
 namespace Ui {

@@ -14,7 +14,7 @@ class Pivot_Selector_Plugin_Loader : public QObject
     friend class Simplex_method_calculator;
 public:
     explicit Pivot_Selector_Plugin_Loader(QObject *parent = nullptr, MainWindow *w=nullptr);
-    void load_plugins(QDir plugins_dir);
+    void load_plugins(QDir root_dir);
 
 signals:
 

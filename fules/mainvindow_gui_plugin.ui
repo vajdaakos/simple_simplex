@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Mainvindow_gui_plugin</class>
- <widget class="QWidget" name="Mainvindow_gui_plugin">
+ <class>Mainvindow_gui_plugin_for_fules</class>
+ <widget class="QWidget" name="Mainvindow_gui_plugin_for_fules">
   <property name="geometry">
    <rect>
     <x>0</x>
